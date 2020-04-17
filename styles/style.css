@@ -1,0 +1,23 @@
+body,
+html {
+  height: 100%;
+}
+body {
+  background-color: darkgrey;
+  height: 100%;
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.name {
+    color: bisque;
+    position: relative;
+    left: 250px;
+    font-style: oblique;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+}
+.container {
+    color: green;
+    border: 5px;
+}
