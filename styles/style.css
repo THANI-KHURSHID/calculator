@@ -11,13 +11,13 @@ body {
   background-size: cover;
 }
 .name {
-    color: bisque;
+    color: chartreuse;
     position: relative;
     left: 250px;
-    font-style: oblique;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    font-weight: lighter;
+    font-family: fantasy;
 }
 .container {
-    color: green;
+    color: rgb(89, 216, 89);
     border: 5px;
 }
