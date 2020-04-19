@@ -62,3 +62,6 @@ equalsKey.addEventListener("click" , function(e) {
   display.value = result;
 
 }) 
+//TODO: allow cascade calls.
+//TODO: Better organization of code.
+
