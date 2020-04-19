@@ -2,14 +2,14 @@ body,
 html {
   height: 100%;
 }
-body {
+/* body {
   background-color: darkgrey;
   height: 100%;
   background-image: url("../images/background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 .name {
     color: chartreuse;
     position: relative;
@@ -17,7 +17,4 @@ body {
     font-weight: lighter;
     font-family: fantasy;
 }
-.container {
-    color: rgb(89, 216, 89);
-    border: 5px;
-}
+
