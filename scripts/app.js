@@ -1,6 +1,7 @@
 let expression = "";
 let operatorCalled = false;
 let secondNumber = "";
+let decimalPressed = 0;
 
 
 const display = document.getElementById("displayResult");
@@ -8,6 +9,8 @@ const numberKeys = document.querySelectorAll(".calc_button");
 const operatorKeys = document.querySelectorAll(".calc_operator");
 const equalsKey = document.querySelector("#calc_equal");
 const clear = document.querySelector("#calc_clear");
+const backSpace = document.querySelector("#calc_backspace");
+const decimalPoint = document.querySelector("#calc_decimal");
 
 
 
@@ -18,8 +21,10 @@ function populateDisplay(e) {
   if(operatorCalled === true) {
     secondNumber+=this.value;
   }
+  
   expression += this.value;
   display.value = expression;
+  
 }
 for (let i = 0; i < numberKeys.length; i++) {
   numberKeys[i].addEventListener("click", populateDisplay);
@@ -40,6 +45,7 @@ function getResult(e) {
     console.log(`${expression} = ${result} `);
     display.value = result;
     expression = "";
+    
   } else {
     return;
   }
@@ -49,5 +55,15 @@ function clearScreen() {
   display.value = "";
   expression = "";
   secondNumber = "";
+  
 } 
 clear.addEventListener("click" , clearScreen);
+function removeChar() {
+  const index = expression.length - 1;
+  let str = expression.slice(0 , index);
+  expression = str;
+  display.value = expression;
+  console.log(expression);
+
+}
+backSpace.addEventListener("click" , removeChar);
